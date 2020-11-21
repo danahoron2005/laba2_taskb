@@ -1,0 +1,9 @@
+text = ["Вводимо текст, у якому ми хочемо порахувати літерки"]
+l = []
+k = ' '.join(text)
+for i in k:
+    if i not in l and i.isalpha():
+        print(i + ': ' + str(k.count(i)))
+        print("-------------")
+        l.append(i)
+        #це в мене завдання Б з другої лаби :)
